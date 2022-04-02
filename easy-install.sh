@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get update
 
-sudo apt-get install \
+sudo apt-get install -y \
     ca-certificates \
     curl \
     gnupg \
@@ -15,9 +15,9 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 
-sudo apt-get update
+sudo apt-get update -y
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
 sudo groupadd docker
 sudo usermod -aG docker mesterlum
