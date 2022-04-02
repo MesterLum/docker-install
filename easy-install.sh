@@ -20,5 +20,5 @@ sudo apt-get update -y
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
 sudo groupadd docker
-sudo usermod -aG docker mesterlum
+# sudo usermod -aG docker mesterlum
 sudo systemctl enable docker
